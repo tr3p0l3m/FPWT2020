@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Global classes */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+button {
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    background: blue;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    transition: background 300ms ease-in-out;
+}
+
+button:hover{
+    background: red;
+}
+
+.hero nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 26px 0;
+}
+
+.hero nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero nav .container .menu a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-right: 20px;
+    transition: color 300ms ease-in-out;
+}
