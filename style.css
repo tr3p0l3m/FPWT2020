@@ -10,7 +10,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    border: 1px solid;
 }
 
 button {
@@ -25,7 +25,7 @@ button {
 }
 
 button:hover{
-    background: red;
+    background: pink;
 }
 
 .hero nav{
@@ -47,4 +47,14 @@ button:hover{
     color: white;
     margin-right: 20px;
     transition: color 300ms ease-in-out;
+}
+
+.hero nav .container .menu a:hover{
+    color: magenta;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    
 }
