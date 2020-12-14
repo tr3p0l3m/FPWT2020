@@ -20,17 +20,20 @@
         </thead>
         <tbody>
             <?php 
-                $username = 'username';
-                $conn = mysqli_connect("localhost","root","","report");
+                $DBservername = "localhost";
+                $DBusername = "root";
+                $DBpassword = "";
+                $DBname = "webtechfinal2020";
+                $conn = new mysqli($DBservername, $DBusername, $DBpassword,$DBname);
                 if ($conn-> connect_error){
                     die("Error 404: Database not found!".$conn-> connect_error);
                 }
-                $sql = "SELECT Msg_Title,Msg_Message,Msg_Location,Msg_Username,Msg_Category from report_data";
+                $sql = "SELECT Report_username,Report_title,Report_event,Report_location,Report_category from reportdata";
                 $result = $conn-> query($sql);
 
                 if($result-> num_rows > 0){
                     while($row = $result-> fetch_assoc()){
-                        echo "<tr><td>". $row['Msg_Title'] ."</td><td>". $row['Msg_Message'] ."</td><td>". $row['Msg_Location'] ."</td><td>". $row['Msg_Username'] ."</td><td>". $row['Msg_Category'] ."</td><tr>";
+                        echo "<tr><td>". $row['Report_username'] ."</td><td>". $row['Report_title'] ."</td><td>". $row['Report_event'] ."</td><td>". $row['Report_location'] ."</td><td>". $row['Report_category'] ."</td><tr>";
                     }
                     echo "</table>";
                 }else{
@@ -41,7 +44,7 @@
             ?>
         </tbody>
     </table>
-    <button>
+    <button onclick="window.location.href='./report.html';">
         Add Event
     </button>
 </body>

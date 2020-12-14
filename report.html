@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification</title>
-    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="./report1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form name="form-data" action="logincustomerdbfile.php" onsubmit="return FormValidate()" method="POST">
+    <form name="form-data" action="report.php" onsubmit="return FormValidate()" method="POST">
         <div class="cont">
             <div class="form sign-in">
                 <h3 id="title">What is your emergency?</h3>
             <div id="input-box">
                 <label class="" id="user">
-                    <span>Username: </span>
+                    <span>USERNAME: </span>
                     <input class="" name="username" type="text" placeholder="username"><br>
                 </label>
-                <label class="">
-                    <span>Report:</span>
+                <label class="" id="user">
+                    <span>TITLE: </span>
+                    <input class="" name="title" type="text" placeholder="title"><br>
+                </label>
+                <label class="" id="user">
+                    <span>LOCATION: </span>
+                    <input class="" name="location" type="text" placeholder="location"><br>
+                </label>
+                <label class="" id="user">
+                    <span>CATEGORY: </span>
+                    <input class="" name="category" type="text" placeholder="category"><br>
                 </label>
                 <label class="">
-                    <textarea name="Message" class = "input1"></textarea><br>
+                    <span>REPORT EVENT:</span>
+                </label>
+                <label class="">
+                    <textarea name="event" class = "input1"></textarea><br>
                 </label>
                 <button type="submit" class="submit">Submit</button>
             </div>
             <div class="sub-cont">
                 <div class="img">
                     <div class="img-text">
-                        <h2>New User?</h2>
-                        <p>If you do not already have an account, just sign Up!</p>
+                        <h2>Hey User!</h2>
+                        <p>Want to see your entries?</p>
                     </div>
-                    <div class="img-btn" id="sign">
-                        <span class="m-up">Sign Up</span>
+                    <div class="img-btn" id="view">
+                        <span class="m-up">VIEW</span>
                     </div>
                 </div>
             </div>

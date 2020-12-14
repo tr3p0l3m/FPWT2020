@@ -1,5 +1,5 @@
-document.getElementById("sign").addEventListener("click", myFunction);
+document.getElementById("view").addEventListener("click", myFunction);
 function myFunction() {
-    alert ("Continue to Sign Up?");
-    window.location = 'signup.html' ;
+    alert ("View Data?");
+    window.location = 'admin.php' ;
   }
