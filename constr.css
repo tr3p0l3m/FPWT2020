@@ -1,0 +1,111 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body{
+    height: 100%;
+    background-image: url(https://www.hdcarwallpapers.com/walls/land_rover_discovery_red_cross_emergency_response_vehicle_2-HD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container2{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background 300ms ease-in-out;
+}
+
+button i{
+    margin-right:12px;
+}
+
+button:hover{
+    background: pink;
+}
+
+.hero nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 26px 0;
+}
+
+.hero nav .container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero nav .container2 .menu a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-right: 20px;
+    transition: color 300ms ease-in-out;
+}
+
+.hero nav .container2 .menu a:hover{
+    color: magenta;
+}
+
+.hero{
+    width: 100%;
+    background: #020230;
+    display: flex;
+    position: relative;
+}
+
+.hero .container2{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+  .bgimg {
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+  }
+  
+  /* Position text in the top-left corner */
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the middle */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: larger;
+  }
+  
+  /* Style the <hr> element */
+  hr {
+    margin: auto;
+    width: 40%;
+  }

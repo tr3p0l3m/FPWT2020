@@ -1,0 +1,59 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color: blue;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+}
+
+.content-table{
+   border-collapse: collapse; 
+   margin:25px 0;
+   font-size: 0.9em;
+   min-width: 488px;
+   border-radius: 5px 5px 0 0;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: rgb(43, 18, 131);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+
+}
+
+.content-table tbody tr{
+    border-bottom:1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: rgb(80, 46, 230);
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(3, 1, 92);
+}
+
+button {
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    background: rgb(52, 13, 143);
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background 300ms ease-in-out;
+}

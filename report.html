@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <link rel="stylesheet" href="report.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form name="form-data" action="logincustomerdbfile.php" onsubmit="return FormValidate()" method="POST">
+        <div class="cont">
+            <div class="form sign-in">
+                <h3 id="title">What is your emergency?</h3>
+            <div id="input-box">
+                <label class="" id="user">
+                    <span>Username: </span>
+                    <input class="" name="username" type="text" placeholder="username"><br>
+                </label>
+                <label class="">
+                    <span>Report:</span>
+                </label>
+                <label class="">
+                    <textarea name="Message" class = "input1"></textarea><br>
+                </label>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+            <div class="sub-cont">
+                <div class="img">
+                    <div class="img-text">
+                        <h2>New User?</h2>
+                        <p>If you do not already have an account, just sign Up!</p>
+                    </div>
+                    <div class="img-btn" id="sign">
+                        <span class="m-up">Sign Up</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="scriptlogin.js"></script>
+    </form>
+</body>
+</html>
+

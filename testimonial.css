@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://www.hdcarwallpapers.com/walls/land_rover_discovery_red_cross_emergency_response_vehicle_2-HD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+body::after{
+    color: #0e0e80c0;
+}
+
+.container2{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background 300ms ease-in-out;
+}
+
+button i{
+    margin-right:12px;
+}
+
+button:hover{
+    background: pink;
+}
+
+.hero nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 26px 0;
+}
+
+.hero nav .container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero nav .container2 .menu a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-right: 20px;
+    transition: color 300ms ease-in-out;
+}
+
+.hero nav .container2 .menu a:hover{
+    color: magenta;
+}
+
+.hero{
+    width: 100%;
+    background: #020230;
+    display: flex;
+    position: relative;
+}
+
+.hero .container2{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials{
+    margin: 100px auto;
+}
+
+.testimonials h1{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.testimonials h1::after{
+    content: '';
+    background: rgb(8, 8, 8);
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.testimonials .row{
+    margin-top: 30px;
+}
+
+.col-md-4{
+    margin: 40px auto;
+}
+
+.profile {
+    padding: 70px 10px 10px;
+    background-color: #f3d3ac;
+    border-radius: 20px;
+    opacity: 85%;
+}
+
+.profile img{
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid white;
+}
+
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: rgb(22, 24, 134);
+    font-family: 'Nunito', sans-serif;
+
+}
+
+span{
+    font-size: 12px;
+    color: rgb(10, 10, 10);
+    font-family: 'Nunito', sans-serif;
+}
+
+blockquote{
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+blockquote ::before{
+    content: '\93';
+    font-size: 50px;
+    position: relative;
+    color: #fff;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+blockquote ::after{
+    content: '\94';
+    font-size: 50px;
+    position: relative;
+    color: #fff;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+
+}
+
+.profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
